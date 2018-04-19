@@ -1,0 +1,88 @@
+/* GLOBAL STYLES */
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #67696b;
+}
+
+.container {
+   padding: 0.875rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line-one {
+    height: 4px;
+    background-color: #2e3e4f;
+    border: none;
+    margin: 4px 0;
+}
+
+.line-two {
+    height: 2px;
+    background-color: #2e3e4f;
+    border: none;
+    margin: 4px 0;
+    display: flex;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* HEADER STYLES */
+
+header {
+    background-color: #2e3e4f;
+    margin-top: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.35rem;
+    padding: 1.25rem 0;
+    text-transform: uppercase;
+}
+
+/* SECTION ONE */
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 0.75rem;
+    font-size: 1.15rem;
+    color: #2e3e4f;
+}
+
+.section-one p {
+   font-size: 0.85rem;
+   text-align: center;
+   padding-bottom: 1.15rem;
+}
+
+/* FORM STYLES */
+
+legend {
+    color: #2e3e4f;
+    font-weight: 700;
+    padding: 1.15rem 0;
+}
+
+.set-one label {
+    width: 100%;
+}
+
+.set-one input {
+    width: 100%;
+}
+
+.set-one select {
+    width: 100%;
+}

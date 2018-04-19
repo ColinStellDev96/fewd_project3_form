@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -16,28 +17,31 @@
 
             <div class="section-one">
                 <h2>Signup for our newsletter</h2>
-                <p>get the latest news on how your doce is doing right now in your inbox</p>
+                <p>Get the latest news on how your code is doing right now in your inbox</p>
             </div>
+
+            <hr class="line-one">
+            <hr class="line-two">
 
             <form action="index.html" method="post">
 
-                <fieldset>
+                <fieldset class="set-one">
                     <legend>Contact Information</legend>
-                    <label for="name">
+                    <label for="full-name">
                         Full Name
-                        <input type="text" id="name" name="user-name">
+                        <input required type="text" id="full-name" name="name" placeholder="Required">
                     </label>
-                    <label for="mail">
+                    <label for="email-address">
                         Email Address
-                        <input type="text" id="mail" name="email">
+                        <input required type="text" id="email-address" name="mail" placeholder="Required">
                     </label>
-                    <label for="phone">
+                    <label for="phone-number">
                         Phone Number
-                        <input type="tel" id="phone" name="phone-number">
+                        <input type="tel" id="phone-number" name="phone">
                     </label>
-                    <label for="address">
+                    <label for="street-address">
                         Street Address
-                        <input type="text" id="address" name="stree-address">
+                        <input type="text" id="stree-address" name="address">
                     </label>
                     <label for="city">
                         City
@@ -99,11 +103,13 @@
                                 <option value="WY">Wyoming</option>
                             </select>				                               
                     </label>
-                    <label for="zip">
+                    <label for="zip-code">
                         Zip Code
-                        <input type="text" id="zip" name="zip-code">
+                        <input type="text" id="zip-code" name="zip">
                     </label>
                 </fieldset>
+
+                <hr class="line-two">
 
                 <fieldset>
                         <legend>Newsletter</legend>
@@ -116,15 +122,15 @@
                         <label for="javascript-news">Javascript Newsletter</label>
 
                         <p>Newsletter Format</p>
-                        <label for="html-form">HTML</label>
-                        <input type="checkbox" id="html-form" name="html-format">
-                        <label for="plain-form">Plain Text</label>
-                        <input type="checkbox" id="plain-form" name="plain-format">
+                        <input type="checkbox" id="html" name="html-format">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" id="plain-text" name="plain-format">
+                        <label for="plain-text">Plain Text</label>
 
                         <label for="topics">Other topics you'd like to hear about</label>
                         <textarea id="topics" name="additional"></textarea>
 
-                        <button type="reset">Sign Up</button>
+                        <button type="submit">Sign Up</button>
                 </fieldset>
             </form>
 
