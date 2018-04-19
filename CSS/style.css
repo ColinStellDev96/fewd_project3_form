@@ -9,29 +9,14 @@ body {
    padding: 0.875rem;
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.75rem;
 }
 
-.line-one {
-    height: 4px;
-    background-color: #2e3e4f;
-    border: none;
-    margin: 4px 0;
-}
-
-.line-two {
-    height: 2px;
-    background-color: #2e3e4f;
-    border: none;
-    margin: 4px 0;
-    display: flex;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
+footer p {
+    margin-top: 1.2rem;
 }
 
 /* HEADER STYLES */
@@ -69,6 +54,11 @@ h2 {
 
 /* FORM STYLES */
 
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 legend {
     color: #2e3e4f;
     font-weight: 700;
@@ -80,9 +70,84 @@ legend {
 }
 
 .set-one input {
-    width: 100%;
+    width: 97%;
 }
 
 .set-one select {
     width: 100%;
+}
+
+.line-one {
+    height: 4px;
+    background-color: #2e3e4f;
+    border: none;
+    margin: 4px 0;
+    width: 100%;
+}
+
+.line-two {
+    height: 2px;
+    background-color: #2e3e4f;
+    border: none;
+    margin: 4px 0;
+    display: flex;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+input {
+    margin: 0.875rem 0;
+    background-color: #e2e2e2;
+    padding: 0.6rem 0.3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    margin: 0.875rem 0;
+}
+
+label {
+    font-size: 0.85rem;
+}
+
+div {
+    display: block;
+}
+
+.text-area {
+    margin-top: 1rem;
+}
+
+textarea {
+    background-color: #e2e2e2;
+    width: 98%;
+    border: none;
+    margin-top: .5rem;
+    resize: none;
+    height: 5rem;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #e2e2e2;
+    width: 98%;
+    border: none;
+    color: #67696b;
+    padding: 0.6rem 0.3rem; 
+}
+
+button {
+    width: 99.5%;
+    background-color: #03ccb5;
+    color: white;
+    text-align: center;
+    border: none;
+    height: 3rem;
+    margin-top: 1rem;
+    border-radius: 5px;
 }

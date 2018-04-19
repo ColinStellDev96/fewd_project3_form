@@ -27,29 +27,18 @@
 
                 <fieldset class="set-one">
                     <legend>Contact Information</legend>
-                    <label for="full-name">
-                        Full Name
-                        <input required type="text" id="full-name" name="name" placeholder="Required">
-                    </label>
-                    <label for="email-address">
-                        Email Address
-                        <input required type="text" id="email-address" name="mail" placeholder="Required">
-                    </label>
-                    <label for="phone-number">
-                        Phone Number
-                        <input type="tel" id="phone-number" name="phone">
-                    </label>
-                    <label for="street-address">
-                        Street Address
-                        <input type="text" id="stree-address" name="address">
-                    </label>
-                    <label for="city">
-                        City
-                        <input type="text" id="city" name="city-field">
-                    </label>
-                    <label for="state">
-                        State
-                        <select id="state" name="select-state">
+                    <label for="full-name">Full Name</label>
+                    <input required type="text" id="full-name" name="name" placeholder="Required">
+                    <label for="email-address">Email Address</label>
+                    <input required type="text" id="email-address" name="mail" placeholder="Required">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone">
+                    <label for="street-address">Street Address</label>
+                    <input type="text" id="street-address" name="address">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city-field">
+                    <label for="state">State</label>
+                    <select id="state" name="select-state">
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -101,34 +90,44 @@
                                 <option value="WV">West Virginia</option>
                                 <option value="WI">Wisconsin</option>
                                 <option value="WY">Wyoming</option>
-                            </select>				                               
-                    </label>
-                    <label for="zip-code">
-                        Zip Code
-                        <input type="text" id="zip-code" name="zip">
-                    </label>
+                            </select>				                         
+                    <label for="zip-code">Zip Code</label>
+                    <input type="text" id="zip-code" name="zip"> 
+                
                 </fieldset>
 
                 <hr class="line-two">
 
-                <fieldset>
+                <fieldset class="set-two">
                         <legend>Newsletter</legend>
                         <p>Select the newsletters you would like to receive</p>
-                        <input type="radio" id="html-news" name="html-newsletter">
-                        <label for="html-news">HTML Newsletter</label>
-                        <input type="radio" id="css-news" name="css-newsletter">
-                        <label for="css-news">CSS Newsletter</label>
-                        <input type="radio" id="javascript-news" name="javascript-newsletter">
-                        <label for="javascript-news">Javascript Newsletter</label>
+                        <div>
+                            <input type="checkbox" id="html-news" name="html-newsletter">
+                            <label for="html-news">HTML Newsletter</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="css-news" name="css-newsletter">
+                            <label for="css-news">CSS Newsletter</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="javascript-news" name="javascript-newsletter">
+                            <label for="javascript-news">Javascript Newsletter</label>
+                        </div>
 
                         <p>Newsletter Format</p>
-                        <input type="checkbox" id="html" name="html-format">
-                        <label for="html">HTML</label>
-                        <input type="checkbox" id="plain-text" name="plain-format">
-                        <label for="plain-text">Plain Text</label>
-
-                        <label for="topics">Other topics you'd like to hear about</label>
-                        <textarea id="topics" name="additional"></textarea>
+                        <div>
+                            <input type="radio" id="html" name="html-format">
+                            <label for="html">HTML</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="plain-text" name="plain-format">
+                            <label for="plain-text">Plain Text</label>
+                        </div>
+                        
+                        <div class="text-area">
+                            <label for="topics">Other topics you'd like to hear about</label>
+                            <textarea id="topics" name="additional"></textarea>
+                        </div>
 
                         <button type="submit">Sign Up</button>
                 </fieldset>
