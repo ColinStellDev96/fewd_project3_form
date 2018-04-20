@@ -107,8 +107,25 @@ input {
     border-radius: 5px;
 }
 
+:focus {
+    outline-offset: -2;
+    outline-color: #2e3e4f;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.85rem;
+    padding-right: .5rem;
+    color: #bbbaba;
+}
+
 select {
     margin: 0.875rem 0;
+    font-size: 0.85rem;
+    color: #bbbaba;
 }
 
 label {
