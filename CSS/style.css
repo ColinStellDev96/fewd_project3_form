@@ -54,11 +54,6 @@ h2 {
 
 /* FORM STYLES */
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 legend {
     color: #2e3e4f;
     font-weight: 700;
@@ -66,11 +61,16 @@ legend {
 }
 
 .set-one label {
+    display: block;
     width: 100%;
 }
 
 .set-one input {
     width: 97%;
+}
+
+input[id="zip-code"] {
+    width: 50%;
 }
 
 .set-one select {
@@ -167,4 +167,13 @@ button {
     height: 3rem;
     margin-top: 1rem;
     border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 }
