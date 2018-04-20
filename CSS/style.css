@@ -122,12 +122,6 @@ input {
     color: #bbbaba;
 }
 
-select {
-    margin: 0.875rem 0;
-    font-size: 0.85rem;
-    color: #bbbaba;
-}
-
 label {
     font-size: 0.85rem;
 }
@@ -152,10 +146,13 @@ textarea {
 
 select {
     background-color: #e2e2e2;
-    width: 98%;
+    width: 100%;
     border: none;
     color: #67696b;
-    padding: 0.6rem 0.3rem; 
+    padding: 0.6rem 0.3rem;
+    margin: 0.875rem 0;
+    font-size: 0.85rem;
+    color: #bbbaba; 
 }
 
 button {
@@ -170,10 +167,38 @@ button {
 }
 
 @media (min-width: 768px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .set-one label {
+        display: inline-block;
+        width: 30%;
+    }
+    
+    .set-one input {
+        width: 68%;
+    }
+
+    input[id="zip-code"] {
+        width: 20%;
+    }
+
+    .set-one select {
+        width: 69.2%;
+    }
+    
+    textarea {
+        width: 99.5%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .set-one {
+        margin-bottom: 1rem;
+    }
 
 }
