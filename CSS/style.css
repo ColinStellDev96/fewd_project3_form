@@ -198,7 +198,7 @@ button {
         width: 68%;
     }
 
-    input[id="zip-code"] {
+    input #zip-code {
         width: 20%;
     }
 

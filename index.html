@@ -28,12 +28,12 @@
                 <fieldset class="set-one">
                     <legend>Contact Information</legend>
                     <div>
-                        <label for="full-name">Full Name</label>
-                        <input required type="text" id="full-name" name="name" placeholder="Required">
+                        <label for="fullName">Full Name</label>
+                        <input  type="text" id="fullName" name="fullName" placeholder="Required" required>
                     </div>
                     <div>
                         <label for="email-address">Email Address</label>
-                        <input required type="email" id="email-address" name="mail" placeholder="Required">
+                        <input type="email" id="email-address" name="email" placeholder="Required" required>
                     </div>
                     <div>
                         <label for="phone-number">Phone Number</label>
@@ -50,7 +50,7 @@
                     <div>
                         <label for="state">State</label>
                         <select id="state" name="select-state">
-                                    <option value="Choose">Choose State</option>
+                                    <option value="" disabled selected>Choose State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
@@ -106,7 +106,7 @@
                     </div>
                      <div>  				                         
                         <label for="zip-code">Zip Code</label>
-                        <input required type="text" id="zip-code" name="zip" placeholder="Required">
+                        <input type="text" id="zip-code" name="zip" placeholder="Required" required>
                     </div> 
                 
                 </fieldset>
